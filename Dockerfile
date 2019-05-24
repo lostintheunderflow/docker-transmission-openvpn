@@ -58,7 +58,9 @@ RUN apt-get update \
  /tmp/jacket.tar.gz -C \
 	/app/Jackett --strip-components=1 && \
  echo "**** fix for host id mapping error ****" && \
- chown -R root:root /app/Jackett && \
+ chown -R abc:abc /app/Jackett && \
+ mkdir -R abc:abc /config/Jackett && \
+ chown -R abc:abc /config/Jackett && \
  echo "**** cleanup ****" && \
  apt-get clean && \
  rm -rf \
