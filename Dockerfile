@@ -164,4 +164,4 @@ ENV OPENVPN_USERNAME=**None** \
 # Expose port and run
 EXPOSE 9091
 EXPOSE 9117
-CMD ["dumb-init", "/etc/openvpn/start.sh", "/app/Jackett/jackett"]
+CMD ["dumb-init", "/app/Jackett/jackett", "/etc/openvpn/start.sh"]
