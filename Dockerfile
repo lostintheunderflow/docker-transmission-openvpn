@@ -8,8 +8,6 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 ARG JACKETT_ARCH="LinuxARM32"
 # environment settings
 ARG DEBIAN_FRONTEND="noninteractive"
-ENV XDG_DATA_HOME="/config" \
-XDG_CONFIG_HOME="/config"
 VOLUME /data
 VOLUME /config
 VOLUME /downloads
@@ -162,7 +160,9 @@ ENV OPENVPN_USERNAME=**None** \
     TRANSMISSION_WEB_HOME= \
     DROP_DEFAULT_ROUTE= \
     WEBPROXY_ENABLED=false \
-    WEBPROXY_PORT=8888
+    WEBPROXY_PORT=8888 \
+    XDG_DATA_HOME="/config" \
+    XDG_CONFIG_HOME="/config"
 
 # Expose port and run
 EXPOSE 9091
