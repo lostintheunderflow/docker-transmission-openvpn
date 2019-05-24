@@ -68,6 +68,7 @@ RUN apt-get update \
 # Add configuration and scripts
 ADD openvpn/ /etc/openvpn/
 ADD transmission/ /etc/transmission/
+ADD scripts/ /scripts
 ADD tinyproxy /opt/tinyproxy/
 COPY root/ /
 ENV OPENVPN_USERNAME=**None** \
