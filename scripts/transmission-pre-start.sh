@@ -5,5 +5,5 @@ chown -R abc:abc \
 	/downloads \
     /data
 
-sudo -g users -u abc -E app/Jackett/jackett &
+app/Jackett/jackett &
 exit 0
