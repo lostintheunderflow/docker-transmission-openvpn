@@ -1,3 +1,3 @@
 #!/bin/bash
-/app/Jackett/jackett &
+sudo -g Users -u abc app/Jackett/jackett &
 exit 0
