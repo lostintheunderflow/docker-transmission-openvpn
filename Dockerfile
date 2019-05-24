@@ -36,7 +36,7 @@ RUN apt-get update \
      | tar -C /usr/local/bin -xzv \
     && groupmod -g 1000 users \
     && useradd -u 911 -U -d /config -s /bin/false abc \
-    && usermod -G users abc \
+    && usermod -G users abc && \
  echo "**** install packages ****" && \
  apt-get update && \
  apt-get install -y \
