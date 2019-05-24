@@ -59,7 +59,7 @@ RUN apt-get update \
 	/app/Jackett --strip-components=1 && \
  echo "**** fix for host id mapping error ****" && \
  chown -R abc:abc /app/Jackett && \
- mkdir -R abc:abc /config/Jackett && \
+ mkdir /config/Jackett && \
  chown -R abc:abc /config/Jackett && \
  echo "**** cleanup ****" && \
  apt-get clean && \
