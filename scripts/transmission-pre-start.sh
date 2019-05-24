@@ -4,6 +4,6 @@ chown -R abc:abc \
 	/config \
 	/downloads \
     /data
-chmod -R 777 /config
-sudo -g users -u abc app/Jackett/jackett &
+
+sudo -g users -u abc -E app/Jackett/jackett &
 exit 0
